@@ -1,0 +1,230 @@
+/* Основные стили для сайта JoyCity Marketplace */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #663399;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1200x400.png?text=JoyCity') no-repeat center/cover;
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #663399;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #572d84;
+}
+
+.categories-section, .products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.category-card, .product-card {
+  width: 180px;
+  margin: 0.5rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.category-card .category-name {
+  padding: 1.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.category-card a, .product-card a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.product-card .price {
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+.product-detail {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-detail img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.product-detail .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.cart-items {
+  padding: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.cart-item-controls span {
+  margin-right: 0.5rem;
+}
+
+.cart-total {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.cart-actions {
+  text-align: right;
+  margin: 1rem;
+}
+
+.small-btn {
+  background: #e53935;
+  border: none;
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.small-btn:hover {
+  background: #b71c1c;
+}
+
+.checkout-form {
+  max-width: 600px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form label {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.order-summary {
+  max-width: 600px;
+  margin: 1rem auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f0f0f0;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
