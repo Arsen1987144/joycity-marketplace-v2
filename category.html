@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Категория – JoyCity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">JoyCity</div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="cart.html">Корзина</a>
+    </nav>
+  </header>
+  <main>
+    <h1 id="category-title">Категория</h1>
+    <div id="product-list" class="products-grid">
+      <!-- Товары будут вставлены скриптом -->
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 JoyCity. Все права защищены.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get('category');
+      if (slug) {
+        displayProducts(slug);
+      }
+    });
+  </script>
+</body>
+</html>
